@@ -65,3 +65,7 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: #9da3c2;
 }
+
+svg {
+  width: 30px;
+}
