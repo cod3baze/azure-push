@@ -13,37 +13,109 @@ main {
   overflow-x: auto;
 }
 
-main ul li h4 {
+@media (max-width: 610px) {
+  main {
+    padding: 0;
+    margin: 20px 5px;
+  }
+}
+
+/* BOT */
+div#presentation p {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Roboto', Arial, sans-serif, monospace;
+  line-height: 40px;
+}
+
+@media (max-width: 610px) {
+  div#presentation p {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+
+div#presentation div#languages {
+  margin: 20px 40px;
+}
+
+div#languages ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+div#languages ul li {
+  color: #0026EC;
+  background-color: #f1f1f1;
+  max-width: 100px;
+  padding: 2px;
+  margin-bottom: 3px;
+  border-radius: 6px;
+}
+
+div#bot ul#ex {
+  margin-top: 20px;
+  margin-left: 30px;
+
   display: flex;
   flex-direction: column;
-  color: #000001;
-  padding: 3px 20px;
 }
 
-main ul li {
-  position: relative;
-  margin: 10px 0;
+/* COMMANDS */
+div#commands ul {
+  width: 400px;
 }
 
-img#img-example {
-  width: 300px;
-  height: 250px;
-  border-radius: 3px;
-  resize: both;
+div#commands ul li {
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+
+  padding: 10px;
+
+  margin: 20px 30px;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 4px;
 }
 
-div#boilerpoite {
-  background-color: aqua;
-  border-radius: 10px;
-  color: red;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: -5px;
-  margin: auto 0;
+@media (max-width: 610px) {
+  div#commands ul {
+    width: 100%;
+    position: relative;
+  }
+
+  div#commands ul li {
+    padding: 10px;
+    margin: 10px 0 0 0;
+  }
 }
 
-img#img-example.isVisible {
-  display: none;
+/* RESOURCES */
+div#resources ul {
+  width: 400px;
+}
+
+div#resources ul li {
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+
+  padding: 10px;
+
+  margin: 20px 30px;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 4px;
+}
+
+@media (max-width: 610px) {
+  div#resources ul {
+    width: 100%;
+    position: relative;
+  }
+
+  div#resources ul li {
+    padding: 10px;
+    margin: 10px 0 0 0;
+  }
 }

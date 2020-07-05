@@ -1,5 +1,17 @@
 div#root {
   display: flex;
-  max-width: 1400xp;
+  max-width: 1300px;
   justify-content: flex-start;
+}
+
+@media (max-width: 610px) {
+  div#root {
+    flex-direction: column;
+  }
+}
+
+#root main,
+#root aside {
+  background: #EBF3FF;
+  border: 1px solid rgba(0, 0, 0, .2);
 }

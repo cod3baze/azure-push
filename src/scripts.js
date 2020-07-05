@@ -1,23 +1,18 @@
-const liElement = document.querySelectorAll('aside ul li')
-const imgExample = document.querySelectorAll('img#img-example')
-const boilerpoite = document.querySelectorAll('div#boilerpoite')
+function openContent(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
 
-const handleImgView = () => {
-  boilerpoite.forEach(point => {
-    point.addEventListener('click', () => {
-      imgExample.forEach(img => {
-        img.classList.toggle('isVisible')
-      })
-    })
-  })
-}
-handleImgView()
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
 
-const handleSelect = () => {
-  liElement.forEach(element => {
-    element.addEventListener('click', (event) => {
-      element.classList.toggle('selected')
-    })
-  })
+  tablinks = document.getElementsByClassName("aside-elements");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-handleSelect()
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

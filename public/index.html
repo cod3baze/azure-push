@@ -18,54 +18,135 @@
   <div id="root">
     <aside>
       <ul>
-        <li class="selected">O software</li>
-        <li>Os recursos</li>
-        <li>As tecnologias</li>
+        <button class="aside-elements" onclick="openContent(event, 'bot')" id="defaultOpen">O bot</button>
+        <button class="aside-elements" onclick="openContent(event, 'commands')">Comandos</button>
+        <button class="aside-elements" onclick="openContent(event, 'resources')">Os recursos</button>
       </ul>
     </aside>
     <main>
-      <h2>Com esse bot é possível:</h2>
-      <ul>
-        <li>
-          <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
-          <div id="example">
-            <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
-          </div>
-          <div id="boilerpoite"></div>
-        </li>
+      <div id="bot" class="tabcontent">
+        <div id="presentation">
+          <p>
+            Com o nosso bot é possível tirar dúvidas e aprender sobre as linguagems
+            de programação utilizadas nas maiores empresas no ramo da tecnologia.
+          </p>
 
-        <li>
-          <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
-          <div id="example">
-            <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
+          <div id="languages">
+            <h4>Linguagens suportadas</h4>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Javascript</li>
+            </ul>
           </div>
-          <div id="boilerpoite"></div>
-        </li>
+        </div>
 
-        <li>
-          <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
-          <div id="example">
-            <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
-          </div>
-          <div id="boilerpoite"></div>
-        </li>
+        <h4>Exemplos básicos</h4>
+        <ul id="ex">
+          <li>
+            <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
+            <div id="example">
+              <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
+            </div>
+          </li>
 
-        <li>
-          <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
-          <div id="example">
-            <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
-          </div>
-          <div id="boilerpoite"></div>
-        </li>
+          <li>
+            <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
+            <div id="example">
+              <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
+            </div>
+          </li>
 
-        <li>
-          <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
-          <div id="example">
-            <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
-          </div>
-          <div id="boilerpoite"></div>
-        </li>
-      </ul>
+          <li>
+            <h4>Tirar dúvidas sobre as nossas tecnologias.</h4>
+            <div id="example">
+              <img id="img-example" src="../assets/genisys_.png" alt="Imagem de exemplo">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="commands" class="tabcontent">
+        <h2>Comandos para interagir com o bot:</h2>
+
+        <ul>
+          <li>
+            <code>
+              doctor
+            </code>
+            <span>Pega informações sobre o bot</span>
+          </li>
+
+          <li>
+            <code>
+              dr.linguagem: learn
+            </code>
+            <span>Pega informações de como aprender a linguagem</span>
+          </li>
+
+          <li>
+            <code>
+              dr.linguagem: contrib
+            </code>
+            <span>Pega informações para contribuir em projetos no github sobre a linguagem.</span>
+          </li>
+
+          <li>
+            <code>
+              dr.linguagem: community
+            </code>
+            <span>Pega informações das comunidades mais ativas da linguagem</span>
+          </li>
+
+          <li>
+            <code>
+              dr.close
+            </code>
+            <span>Termina o bot</span>
+          </li>
+        </ul>
+      </div>
+
+      <div id="resources" class="tabcontent">
+        <h2>Recursos usados na contrução do BOT:</h2>
+        <ul>
+          <li>
+
+            <head>
+              <span>*</span>
+              <strong>NodeJS</strong>
+            </head>
+            <p>Como Ambiente de execução Javascript</p>
+          </li>
+
+          <li>
+
+            <head>
+              <span>*</span>
+              <strong>AXIOS</strong>
+            </head>
+            <p>Fazer requisições asyncronas em API</p>
+          </li>
+
+          <li>
+
+            <head>
+              <span>*</span>
+              <strong>Github API</strong>
+            </head>
+            <p>Pegar informações sobre reositórios para contribuições</p>
+          </li>
+
+          <li>
+
+            <head>
+              <span>*</span>
+              <strong>DISCORD</strong>
+            </head>
+            <p>Pegar informações sobre Comunidades de TI</p>
+          </li>
+        </ul>
+      </div>
     </main>
   </div>
 
