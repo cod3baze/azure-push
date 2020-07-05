@@ -1,0 +1,5 @@
+div#root {
+  display: flex;
+  max-width: 1400xp;
+  justify-content: flex-start;
+}

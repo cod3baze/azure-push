@@ -1,0 +1,22 @@
+aside {
+  display: flex;
+  background: #dedede;
+  margin: 30px 40px;
+  width: 300px;
+  height: 250px;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 0 rgba(204, 200, 200, 0.2);
+}
+
+aside ul {
+  width: 100%;
+}
+
+aside ul li.selected {
+  background-color: black;
+  color: #F8F8FD;
+}
+
+aside ul li {
+  padding: 5px;
+}

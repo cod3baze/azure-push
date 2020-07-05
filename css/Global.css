@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  background: #212134;
+}
+
+p,
+strong,
+span {
+  color: #f8f8fa;
+}
+
+aside ul li {
+  cursor: pointer;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
