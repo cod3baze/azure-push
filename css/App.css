@@ -1,7 +1,16 @@
+body {
+  background: url("../assets/stars.svg") repeat-x scroll center bottom,
+    url("../assets/montains.svg") repeat-x scroll 0% 0%, rgb(11, 10, 13) none repeat scroll 0% 0%;
+  background-size: auto, auto, auto;
+
+  background-color: #F8F8FA;
+}
+
 div#root {
   display: flex;
   max-width: 1300px;
   justify-content: flex-start;
+  background: inherit;
 }
 
 @media (max-width: 610px) {
