@@ -55,11 +55,17 @@ div#languages ul li {
 }
 
 div#bot ul#ex {
-  margin-top: 20px;
   margin-left: 30px;
+
+  position: relative;
+  max-width: 600px;
 
   display: flex;
   flex-direction: column;
+}
+
+div#bot ul#ex li {
+  margin-top: 30px;
 }
 
 /* COMMANDS */
@@ -88,6 +94,10 @@ div#commands ul li {
   div#commands ul li {
     padding: 10px;
     margin: 10px 0 0 0;
+  }
+
+  div#bot ul#ex {
+    width: auto;
   }
 }
 
