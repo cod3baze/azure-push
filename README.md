@@ -2,6 +2,6 @@
 
 Front-end in azure test
 
-- Ilustration
+- Ilustration - The bot
 
 ![The bot - image](./assets/thebot.PNG)
